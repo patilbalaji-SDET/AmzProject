@@ -12,6 +12,8 @@ public class TestCase1_LoginToAmazon extends BaseTest {
 	public void VerifyLogin() {
 		HomePage homepage = new HomePage(page);
 		homepage.hoverOverOnAccountAndList();
+		
+		page.waitForTimeout(1000);
 		homepage.clickOnSign();
 
 		LoginPage loginpage = new LoginPage(page);

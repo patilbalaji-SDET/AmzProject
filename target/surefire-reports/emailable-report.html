@@ -9,11 +9,74 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">87,048</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">94,055</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">amazontest.AmzProject.TestCase1_LoginToAmazon</td><td><a href="#m0">VerifyLogin</a></td><td rowspan="1">1792129947142</td><td rowspan="1">10995</td></tr><tr class="passedodd"><td rowspan="1">amazontest.AmzProject.TestCase2_LoginToAmazonandLogout</td><td><a href="#m1">VerifyLoginAndLogout</a></td><td rowspan="1">1792129909755</td><td rowspan="1">32573</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">amazontest.AmzProject.TestCase1_LoginToAmazon</td><td><a href="#m0">VerifyLogin</a></td><td rowspan="1">1792391406367</td><td rowspan="1">33940</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">amazontest.AmzProject.TestCase1_LoginToAmazon</td><td><a href="#m1">VerifyLogin</a></td><td rowspan="1">1792391443604</td><td rowspan="1">11738</td></tr><tr class="passedodd"><td rowspan="1">amazontest.AmzProject.TestCase2_LoginToAmazonandLogout</td><td><a href="#m2">VerifyLoginAndLogout</a></td><td rowspan="1">1792391373145</td><td rowspan="1">28676</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">amazontest.AmzProject.TestCase1_LoginToAmazon#VerifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">amazontest.AmzProject.TestCase2_LoginToAmazonandLogout#VerifyLoginAndLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">amazontest.AmzProject.TestCase1_LoginToAmazon#VerifyLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\OMCOMP~1\AppData\Local\Temp\playwright-java-13822616666293712350\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\OMCOMP~1\AppData\Local\Temp\playwright-java-13822616666293712350\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator(&quot;#nav-flyout-ya-signin&quot;)
+-     - locator resolved to &lt;div id=&quot;nav-flyout-ya-signin&quot; class=&quot;nav-flyout-content nav-flyout-accessibility&quot;&gt;…&lt;/div&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     52 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+	at com.microsoft.playwright.Locator.click(Locator.java:2837)
+	at amazontest.AmzProject.HomePage.clickOnSign(HomePage.java:29)
+	at amazontest.AmzProject.TestCase1_LoginToAmazon.VerifyLogin(TestCase1_LoginToAmazon.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\OMCOMP~1\AppData\Local\Temp\playwright-java-13822616666293712350\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\OMCOMP~1\AppData\Local\Temp\playwright-java-13822616666293712350\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator(&quot;#nav-flyout-ya-signin&quot;)
+-     - locator resolved to &lt;div id=&quot;nav-flyout-ya-signin&quot; class=&quot;nav-flyout-content nav-flyout-accessibility&quot;&gt;…&lt;/div&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     52 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 37 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">amazontest.AmzProject.TestCase1_LoginToAmazon#VerifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">amazontest.AmzProject.TestCase2_LoginToAmazonandLogout#VerifyLoginAndLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

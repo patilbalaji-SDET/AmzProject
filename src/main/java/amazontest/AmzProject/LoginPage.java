@@ -15,7 +15,8 @@ public class LoginPage {
 
 	public LoginPage(Page page) {
 		this.page = page;
-		accountAndList = page.locator("//span[@class='nav-line-2 ']");
+		//accountAndList = page.locator("//span[@class='nav-line-2 ']");
+		accountAndList = page.locator("#nav-link-accountList-nav-line-1");
 		signin = page.locator("#nav-flyout-ya-signin");
 		enterusername = page.locator("//input[@type='text']");
 		continuebutton = page.locator("//input[@type='submit']");

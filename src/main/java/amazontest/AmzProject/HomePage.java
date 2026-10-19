@@ -13,14 +13,16 @@ public class HomePage {
 
 	public HomePage(Page page) {
 		this.page = page;
-		accountAndList = page.locator("//span[@class='nav-line-2 ']");
+		//accountAndList = page.locator("//span[@class='nav-line-2 ']");
+		accountAndList = page.locator("#nav-link-accountList-nav-line-1");
 		signin = page.locator("#nav-flyout-ya-signin");
-		signout=page.locator("#nav-item-signout");
-		
+		signout = page.locator("#nav-item-signout");
+
 	}
 
 	public void hoverOverOnAccountAndList() {
-		accountAndList.hover();
+		 accountAndList.hover();
+		//accountAndList.click();;
 	}
 
 	public void clickOnSign() {
@@ -30,9 +32,9 @@ public class HomePage {
 	public void signinsubmit() {
 		signinsubmit.click();
 	}
+
 	public void signout() {
 		signout.click();
 	}
-
 
 }

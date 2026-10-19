@@ -1,0 +1,11 @@
+# Created at 2026-10-17T12:23:36.672
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\OMCOMP~1\AppData\Local\Temp\playwright-java-10835990238372439417\package\lib\coreBundle.js:18730:54)
+    at transport.onmessage (C:\Users\OMCOMP~1\AppData\Local\Temp\playwright-java-10835990238372439417\package\lib\coreBundle.js:69259:59)
+    at Immediate._onImmediate (C:\Users\OMCOMP~1\AppData\Local\Temp\playwright-java-10835990238372439417\package\lib\coreBundle.js:34593:20)
+    at process.processImmediate (node:internal/timers:534:21)
+}
+
